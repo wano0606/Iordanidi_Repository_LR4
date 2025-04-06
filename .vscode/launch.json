@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Запуск C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Surname_project_LR4", // Путь к исполняемому файлу
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb", // Используйте "lldb" для macOS
+            "setupCommands": [
+                {
+                    "description": "Включить отображение отладочных сообщений",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build", // Задача для сборки
+            "setupCommands": [
+                {
+                    "description": "Включить отображение отладочных сообщений",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/MinGW/bin/gdb.exe", // Убедитесь, что путь к gdb правильный
+            "miDebuggerArgs": "",
+            "stopAtEntry": false
+        }
+    ]
+}
