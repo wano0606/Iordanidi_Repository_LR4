@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int A, B, C;
+
 // Заглушка метода для ввода чисел
 void inputNumbers() {
     // Реализация будет добавлена позже
